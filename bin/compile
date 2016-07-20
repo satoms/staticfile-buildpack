@@ -23,6 +23,9 @@ echo "Downloaded [$translated_url]"
 compile_nginx_tgz="/tmp/nginx.tgz"
 cd $build_dir
 
+# added for PCF training course
+echo "helloworld from the compile script"
+
 # Alternate root location (default is root of project) for html/js/css
 # root: dist/
 if [[ -e "Staticfile" && "$(grep 'root:' Staticfile)X" != "X" ]]; then
